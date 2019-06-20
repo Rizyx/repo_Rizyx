@@ -1,0 +1,164 @@
+import java.awt.BorderLayout;
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import javax.swing.JTextField;
+import java.awt.GridLayout;
+import java.awt.GridBagLayout;
+import java.awt.GridBagConstraints;
+import java.awt.Insets;
+import javax.swing.JLabel;
+import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.awt.event.ActionEvent;
+import javax.swing.JTextPane;
+import javax.swing.JTable;
+import java.awt.Color;
+import javax.swing.border.BevelBorder;
+import javax.swing.ListSelectionModel;
+import javax.swing.table.DefaultTableModel;
+
+public class ExecutarCadastroFunc extends JFrame {
+
+	private JPanel contentPane;
+	private JTextField nomefunci;
+	private JTextField cpffunci;
+	private JTextField datanascfunc;
+	private JTextField valhrfunci;
+	private JTextField hrtrabfunci;
+	private JTable Tabfun;
+
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					ExecutarCadastroFunc frame = new ExecutarCadastroFunc();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the frame.
+	 */
+	public ExecutarCadastroFunc() {
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 548, 412);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		nomefunci = new JTextField();
+		nomefunci.setBounds(111, 20, 96, 20);
+		contentPane.add(nomefunci);
+		nomefunci.setColumns(10);
+		
+		cpffunci = new JTextField();
+		cpffunci.setBounds(111, 70, 96, 20);
+		contentPane.add(cpffunci);
+		cpffunci.setColumns(10);
+		
+		datanascfunc = new JTextField();
+		datanascfunc.setBounds(111, 120, 96, 20);
+		contentPane.add(datanascfunc);
+		datanascfunc.setColumns(10);
+		
+		valhrfunci = new JTextField();
+		valhrfunci.setBounds(111, 170, 96, 20);
+		contentPane.add(valhrfunci);
+		valhrfunci.setColumns(10);
+		
+		hrtrabfunci = new JTextField();
+		hrtrabfunci.setBounds(111, 220, 96, 20);
+		contentPane.add(hrtrabfunci);
+		hrtrabfunci.setColumns(10);
+		
+		JLabel labelnome = new JLabel("Nome");
+		labelnome.setBounds(10, 22, 48, 17);
+		contentPane.add(labelnome);
+		
+		JLabel labelcpf = new JLabel("cpf");
+		labelcpf.setBounds(10, 73, 48, 14);
+		contentPane.add(labelcpf);
+		
+		JLabel labeldata = new JLabel("data de nasc");
+		labeldata.setBounds(10, 123, 91, 14);
+		contentPane.add(labeldata);
+		
+		JLabel labelvalor = new JLabel("valor por hora");
+		labelvalor.setBounds(10, 173, 91, 14);
+		contentPane.add(labelvalor);
+		
+		JLabel labelhoras = new JLabel("horas trab");
+		labelhoras.setBounds(10, 223, 79, 14);
+		contentPane.add(labelhoras);
+		
+		 
+
+		JButton buttonadd = new JButton("add cadastro");
+		buttonadd.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				Date nascfunc = new Date();
+				SimpleDateFormat Formato = new SimpleDateFormat("ddMMyyyy");
+				try {
+					nascfunc = Formato.parse(datanascfunc.getText());
+				} catch (ParseException e1) {
+					e1.printStackTrace();
+				}
+				funcionario CadFun2 = new funcionario(1, 
+						nomefunci.getText(), 
+						cpffunci.getText(), 
+						nascfunc,
+					     Double.valueOf(valhrfunci.getText()), 
+					     Double.valueOf(hrtrabfunci.getText()));
+				Tabfun.setValueAt(nomefunci, 0, 0);
+				
+			}
+		});
+		buttonadd.setBounds(350, 319, 143, 23);
+		contentPane.add(buttonadd);
+		
+		Tabfun = new JTable();
+		Tabfun.setModel(new DefaultTableModel(
+			new Object[][] {
+				{null, null, null},
+				{null, null, null},
+				{null, null, null},
+				{null, null, null},
+				{null, null, null},
+				{null, null, null},
+				{null, null, null},
+				{null, null, null},
+				{null, null, null},
+				{null, null, null},
+			},
+			new String[] {
+				"Funcionario", "Data nasc", "Salbruto"
+			}
+		) {
+			Class[] columnTypes = new Class[] {
+				String.class, String.class, Double.class
+			};
+			public Class getColumnClass(int columnIndex) {
+				return columnTypes[columnIndex];
+			}
+		});
+		Tabfun.setBackground(Color.LIGHT_GRAY);
+		Tabfun.setBounds(236, 20, 257, 275);
+		contentPane.add(Tabfun);
+		
+	}
+}

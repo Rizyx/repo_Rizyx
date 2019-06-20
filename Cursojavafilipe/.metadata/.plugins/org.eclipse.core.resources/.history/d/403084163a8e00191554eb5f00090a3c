@@ -1,0 +1,18 @@
+package br.com.questao;
+
+import br.com.util.Teclado;
+
+public class Questao10 {
+
+	public static void main(String[] args) {
+		double prest, tax, temp;
+		prest = Teclado.lerDouble("digite o valor da prestacao ");
+		tax = Teclado.lerDouble("digite o valor da taxa ");
+		temp = Teclado.lerDouble("digite o tempo em dias nao pagos ");
+		
+		System.out.println("o valor desta prestacao atrasada sera de " + (prest + (prest * (tax / 100) * temp )));
+
+	}
+
+}
+

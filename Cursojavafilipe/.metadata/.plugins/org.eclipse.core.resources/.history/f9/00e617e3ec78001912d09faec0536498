@@ -1,0 +1,40 @@
+import java.util.Date;
+
+public class funcionario {
+	// atributos
+	int cadastroFuncionario;
+	String nomeFuncionario;
+	String cpfFuncionario;
+	Date dataNascFuncionario;
+	double valorHoraFuncionario;
+	double horasTrabFuncionario;
+	double salBrutoFuncionario;
+	double salFamFuncionario;
+	double descINSSFuncionario;
+	boolean prevPrivFuncionario;
+	double valorPrevPrivFuncionario;
+	
+	// construtor
+	funcionario(int cadastroFuncionario, 
+				String nomeFuncionario, 
+			    String cpfFuncionario, 
+			    Date dataNascFuncionario,
+			    double valorHoraFuncionario, 
+			    double horasTrabFuncionario){
+		this.cadastroFuncionario = cadastroFuncionario; 
+		this.nomeFuncionario = nomeFuncionario; 
+		this.cpfFuncionario = cpfFuncionario;
+		this.dataNascFuncionario = dataNascFuncionario;
+		this.valorHoraFuncionario = valorHoraFuncionario; 
+		this.horasTrabFuncionario = horasTrabFuncionario;
+		this.salBrutoFuncionario = valorHoraFuncionario * 
+				                   horasTrabFuncionario; 
+	}
+
+
+
+
+
+}
+
+

@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class Alunos {
+
+	public static void main(String[] args) {		
+		
+		Scanner s = new Scanner(System.in);
+		
+		System.out.println("digite a primeira nota:");
+		double n1 = s.nextDouble();
+		System.out.println("digite a segunda nota:");
+		double n2 = s.nextDouble();
+		System.out.println("digite a terceira nota:");
+		double n3 = s.nextDouble();
+		System.out.println("digite a quarta nota:");
+		double n4 = s.nextDouble();
+		double media;
+		String resultado;
+		
+		if (media < 7) { 
+			resultado="reprovado";
+		    System.out.println(resultado);
+		}    
+		else { 
+			resultado="aprovado";
+		    System.out.println(resultado);
+		}    
+        s.close();
+	}
+
+}

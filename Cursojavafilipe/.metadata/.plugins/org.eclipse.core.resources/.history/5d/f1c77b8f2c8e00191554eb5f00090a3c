@@ -1,0 +1,9 @@
+package br.com.questao;
+
+public class Questao03 {
+	
+	Double val = 0;
+	
+	val = Teclado.
+
+}

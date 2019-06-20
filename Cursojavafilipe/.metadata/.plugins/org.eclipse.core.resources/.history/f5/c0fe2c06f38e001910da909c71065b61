@@ -1,0 +1,18 @@
+package br.com.questao;
+
+import br.com.util.Teclado;
+
+public class Questao14 {
+
+	public static void main(String[] args) {
+		double alt, qk, altcm, qg, imc;
+		alt = Teclado.lerDouble("digite sua altura ");
+		qk = Teclado.lerDouble("digite seu peso ");
+		altcm = alt * 100;
+		qg = qk * 1000;
+		imc = qg / Math.pow(altcm, 2);
+		System.out.println("o indice imc desta pessoa e de " + imc);
+
+	}
+
+}

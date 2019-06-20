@@ -1,0 +1,15 @@
+package br.com.questao;
+
+import br.com.util.Teclado;
+
+public class Questao06 {
+
+	public static void main(String[] args) {
+		double temp;
+		
+		temp = Teclado.lerDouble("digite uma temperatura em Fahrenheit ");
+		System.out.println("essa temperatura em celsius sera de " + ((temp - 32) * 5 / 9));
+
+	}
+
+}

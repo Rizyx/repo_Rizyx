@@ -1,0 +1,42 @@
+import java.util.Date;
+
+public class funcionario {
+	// atributos
+	int cadastrofunc;
+	String nomefunc;
+	String cpffunc;
+	Date datanascfunc;
+	double valhrfunc;
+	double hrtrabfunc;
+	double salbrutofunc;
+	double salFamFuncionario;
+	double descINSSFuncionario;
+	boolean prevPrivFuncionario;
+	double valorPrevPrivFuncionario;
+	
+	// construtor
+	funcionario(int cadastrofunc, 
+				String nomefunc, 
+			    String cpffunc, 
+			    Date datanascfunc,
+			    double valhrfunc, 
+			    double hrtrabfunc){
+		this.cadastrofunc = cadastrofunc; 
+		this.nomefunc = nomefunc; 
+		this.cpffunc = cpffunc;
+		this.datanascfunc = datanascfunc;
+		this.valhrfunc = valhrfunc; 
+		this.hrtrabfunc = hrtrabfunc;
+		this.salbrutofunc = valhrfunc * 
+				                   hrtrabfunc; 
+		
+		System.out.println(this.datanascfunc);
+	}
+
+
+	
+
+
+}
+
+

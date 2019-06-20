@@ -1,0 +1,25 @@
+
+public class Alunos {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		double n1 = 6;
+		double n2 = 7;
+		double n3 = 8;
+		double n4 = 0;
+		double media = (n1+n2+n3+n4)/4;
+		String resultado;
+		
+		if (media < 7) { 
+			resultado="reprovado";
+		    System.out.println(resultado);
+		}    
+		else { 
+			resultado="aprovado";
+		    System.out.println(resultado);
+		}    
+
+	}
+
+}

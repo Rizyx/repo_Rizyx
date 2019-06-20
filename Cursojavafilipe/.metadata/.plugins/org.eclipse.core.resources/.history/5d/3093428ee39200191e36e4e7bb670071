@@ -1,0 +1,19 @@
+package br.com.orientacao_a_objetos;
+
+public class Executandocliente {
+
+	public static void main(String[] args) {
+		Cliente filipe = new Cliente() ; 
+		Cliente andre = new Cliente() ; 
+		CartaoCredito filipecard = new CartaoCredito() {
+			int numerocard = 1 ;
+			String dataval = "26/06/2022";
+		};
+		CartaoCredito andrecard  = new CartaoCredito() {
+			int numerocard = 2; 
+			String dataval = "30/10/2020";
+		};
+		System.out.println(andrecard);
+	}
+
+}

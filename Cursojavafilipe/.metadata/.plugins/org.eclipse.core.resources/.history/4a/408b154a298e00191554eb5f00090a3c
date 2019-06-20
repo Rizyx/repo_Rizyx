@@ -1,0 +1,21 @@
+package filipecordeirologica;
+
+import java.util.Scanner;
+
+public class exerciciofilipecordeiro {
+
+	public static void main(String[] args) {
+		
+		Scanner ler = new Scanner(System.in);
+		
+		String nome = "";
+		
+		
+		
+		
+		
+		ler.close();
+
+	}
+
+}

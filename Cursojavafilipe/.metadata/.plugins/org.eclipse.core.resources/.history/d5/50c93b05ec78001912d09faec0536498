@@ -1,0 +1,49 @@
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Scanner;
+
+public class ExecutarFuncionario {
+
+	public static void main(String[] args) {
+
+		int 	cadastroFuncionarioVar;
+		String 	nomeFuncionarioVar;
+		String 	cpfFuncionarioVar;
+		Date 	dataNascFuncionarioVar;
+		String  dataNasc;
+		double 	valorHoraFuncionarioVar;
+		double 	horasTrabFuncionarioVar;
+		Scanner s = new Scanner(System.in);
+		System.out.println("Digite o nome");
+		nomeFuncionarioVar  = s.next();
+		System.out.println("Digite o CPF");
+		cpfFuncionarioVar   = s.next();
+		System.out.println("Digite a data de nascimento (DD/MM/AA)");
+		dataNasc			= s.next();
+		SimpleDateFormat Formato = new SimpleDateFormat("ddMMyyyy");
+		try {
+			dataNascFuncionarioVar = Formato.parse(dataNasc);
+		} catch (ParseException e) {
+			e.printStackTrace();
+		}
+
+		System.out.println("Digite o Valor / Hora");
+		valorHoraFuncionarioVar = s.nextDouble(); 
+		System.out.println("Digite as Horas Trabalhadas");
+		horasTrabFuncionarioVar = s.nextDouble();
+		
+		cadastroFuncionarioVar = 0;
+		dataNascFuncionarioVar = new Date();
+		funcionario CadFun = new funcionario(cadastroFuncionarioVar, 
+											 nomeFuncionarioVar, 
+										     cpfFuncionarioVar, 
+										     dataNascFuncionarioVar,
+										     valorHoraFuncionarioVar, 
+										     horasTrabFuncionarioVar);
+		
+		
+		
+	}
+
+}

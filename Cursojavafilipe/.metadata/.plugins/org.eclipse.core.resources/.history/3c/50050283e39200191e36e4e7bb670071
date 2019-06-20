@@ -1,0 +1,11 @@
+package br.com.orientacao_a_objetos;
+
+public class Executandocliente {
+
+	public static void main(String[] args) {
+		Cliente filipe = new Cliente() ; 
+		Cliente andre = new Cliente() ; 
+		
+	}
+
+}
