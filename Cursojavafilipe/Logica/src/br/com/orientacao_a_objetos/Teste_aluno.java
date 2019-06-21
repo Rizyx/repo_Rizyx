@@ -3,6 +3,7 @@ package br.com.orientacao_a_objetos;
 public class Teste_aluno {
 
 	public static void main(String[] args) {
+		Turma java = new Turma();
 		Aluno filipe = new Aluno();
 			filipe.datanascaluno = "26/06/1995";
 			filipe.nomealuno = "filipe b cordeiro";
@@ -11,8 +12,14 @@ public class Teste_aluno {
 			andre.datanascaluno = "22/01/2003";
 			andre.nomealuno = "andre felipe roseman";
 			andre.rgaluno = "874139561759";
+			andre.turma = java;
+			andre.turma.periodo = "matutino";
+			andre.turma.serie = 9;
+			andre.turma.sigla = "c";
+			andre.turma.tpensino ="java master";
 			System.out.println(filipe.datanascaluno + filipe.nomealuno + filipe.rgaluno);
 			System.out.println(andre.datanascaluno + andre.nomealuno + andre.rgaluno);
+			System.out.println(andre.turma.periodo + andre.turma.serie + andre.turma.sigla + andre.turma.tpensino);
 
 	}
 
