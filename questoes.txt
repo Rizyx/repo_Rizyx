@@ -51,3 +51,44 @@ o terceiro para sigla e o quarto para o tipo de ensino.
 
 16.	Faça uma classe chamada TesteTurma para criar dois objetos da classe Turma. 
 Adicione informações a eles e depois mostre essas informações na tela
+
+
+
+29.    Acrescente um construtor na classe Agencia para receber um número como parâmetro.
+
+
+30.    Tente compilar novamente o arquivo TesteContaEAgencia. Observe o erro de compilação.
+
+
+31.    Altere o código da classe TesteContaEAgencia para que o erro de compilação seja resolvido.
+
+
+32.    Acrescente um construtor na classe CartaoDeCredito para receber um número como parâmetro.
+
+
+33.    Tente compilar novamente os arquivos TesteCartaoDeCredito e TesteClienteECartao. Observe os erros de compilação.
+
+
+34.    Altere o código das classes TesteCartaoDeCredito e TesteClienteECartao para que os erros de compilação sejam resolvidos.
+
+
+35.    Acrescente um construtor na classe Conta para receber uma referência como parâmetro.
+
+
+36.    Tente compilar novamente os arquivos TesteContaEAgencia, TesteMetodosConta e TesteValoresPadrao. Observe os erros de compilação.
+
+37.    Altere o código das classes TesteContaEAgencia, TesteMetodosConta e TesteValoresPadrao para que os erros de compilação sejam resolvidos.
+
+
+38.    Acrescente um método na classe Conta para implementar a lógica de transferência de valores entre contas.
+
+
+39.    Faça um teste para verificar o funcionamento do método transfere.
+
+
+40.    Acrescente a todos os funcionários um salário inicial de R$1000,00.
+
+
+41.    Crie uma classe chamada TesteFuncionario2. Dentro dessa classe, crie um objeto do tipo Funcionario.
+Receba do teclado o valor para o atributo nome.
+Depois crie um laço que permita que o usuário possa alterar o nome e o salário dos funcionários e também visualizar os dados atuais.
