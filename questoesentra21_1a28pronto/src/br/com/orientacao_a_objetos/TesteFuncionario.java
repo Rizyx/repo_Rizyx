@@ -24,5 +24,4 @@ public class TesteFuncionario {
 		System.out.println(ninguem.nomefunc + ": " + ninguem.salariofunc);
 		System.out.println(alguem.nomefunc + ": " + alguem.salariofunc);
 	}
-
 }

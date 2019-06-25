@@ -6,12 +6,21 @@ public class Conta {
 	double limite = 100;
 	Agencia agencia;
 	
+	public Conta(Agencia agencia) {
+		this.agencia = agencia;
+	}
+	
+	public void transferencia(Conta conta , double saldo) {
+		conta.saldo -= saldo;
+		this.saldo = saldo;
+	}
+	
 	public void deposito(double valor){
 		saldo += valor;
 	}
+	
 	public void saque(double valor) {
 		if (limite < valor) {
-			System.out.println("nao ha valor para saque: ");
 		}
 		else if (saldo < valor){
 			valor -= saldo;
@@ -21,10 +30,14 @@ public class Conta {
 			saldo -= valor;
 		}
 	}
-	public void extrato() {
-		System.out.println("numero da conta: " + numconta + " saldo " + saldo + " limite: " + limite + " numero da agencia " + agencia.agencia);
+	
+	public String extrato(String extract) {
+		extract = ("numero da conta: " + numconta + " saldo " + saldo + " limite: " + limite + " numero da agencia " + agencia.agencia);
+		return extract;
 	}
-	public void saldo() {
-		System.out.println("saldo disponivel na conta : " + saldo + " limite do cheque especial: " + limite);
+	
+	public String saldo(String sal) {
+		sal = ("saldo disponivel na conta : " + saldo + " limite do cheque especial: " + limite);
+		return sal;
 	}
 }
