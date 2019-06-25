@@ -14,7 +14,7 @@ public class TesteFuncionario2 {
 					somebody.salariofunc = Teclado.lerDouble("digite o salario do funcionario");
 					System.out.println("nome do funcionario: " + somebody.nomefunc + " salario do funcionario: " + somebody.salariofunc);
 					continuarloop = Teclado.lerTexto("deseja continuar?");
-					if (continuarloop.equalsIgnoreCase("nao"));{
+					if (continuarloop.equalsIgnoreCase("nao")){
 						continuar = false;
 					}
 			}
