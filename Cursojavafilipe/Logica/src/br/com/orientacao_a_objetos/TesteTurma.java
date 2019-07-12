@@ -4,17 +4,17 @@ public class TesteTurma {
 
 	public static void main(String[] args) {
 		Turma javas = new Turma();
-		javas.periodo = "matutino";
-		javas.serie = 7;
-		javas.sigla = "S";
-		javas.tpensino = "tecnico";
+		javas.setPeriodo("matutino"); 
+		javas.setSerie(7);
+		javas.setSigla("S");
+		javas.setTpensino("tecnico");
 		Turma paskkk = new Turma();
-		paskkk.periodo = "vespertino";
-		paskkk.serie = 3;
-		paskkk.sigla = "C";
-		paskkk.tpensino = "simples";
-		System.out.println(javas.periodo + javas.serie + javas.sigla + javas.tpensino);
-		System.out.println(paskkk.periodo + javas.serie + javas.sigla + javas.tpensino);
+		paskkk.setPeriodo("vespertino");
+		paskkk.setSerie(3);
+		paskkk.setSigla("C");
+		paskkk.setTpensino("simples");
+		System.out.println(javas.getPeriodo() + javas.getSerie() + javas.getSigla() + javas.getTpensino());
+		System.out.println(paskkk.getPeriodo() + javas.getSerie() + javas.getSigla() + javas.getTpensino());
 	}
 
 }

@@ -1,0 +1,15 @@
+package br.com.orientacao_a_objetos;
+
+public class Telefonista extends Funcionario {
+		private int codEstacaoTrab = 0;
+
+		public int getCodEstacaoTrab() {
+			return codEstacaoTrab;
+		}
+
+		public void setCodEstacaoTrab(int codEstacaoTrab) {
+			this.codEstacaoTrab = codEstacaoTrab;
+		}
+		
+		
+}

@@ -1,0 +1,29 @@
+package br.com.orientacao_a_objetos;
+
+
+public class Gerente {
+	private String nome;
+	private double salariogerente;
+	
+	
+	
+	public String getNome() {
+		return nome;
+	}
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+	public double getSalariogerente() {
+		return salariogerente;
+	}
+	public void setSalariogerente(double salariogerente) {
+		this.salariogerente = salariogerente;
+	}
+
+	public void aumentoperc() {
+		salariogerente *= 1.10;
+	}
+	public void aumentovar(double valor) {
+		salariogerente += valor;
+	}
+}

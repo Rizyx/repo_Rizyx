@@ -1,0 +1,13 @@
+package br.com.polimorfismo;
+
+public class TesteFuncionario {
+
+	public static void main(String[] args) {
+		Gerente alguem = new Gerente();
+		alguem.setNomeFunc("alguem da silva");
+		alguem.setSalarioFunc(1780);
+		System.out.println(alguem.entradaDeFuncionario());
+		System.out.println(alguem.saidaDeFuncionario());
+		}
+
+}

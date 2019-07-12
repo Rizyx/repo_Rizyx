@@ -1,0 +1,16 @@
+package br.com.orientacao_a_objetos;
+
+public class Secretaria extends Funcionario {
+	private int ramal = 0;
+
+	public int getRamal() {
+		return ramal;
+	}
+
+	public void setRamal(int ramal) {
+		this.ramal = ramal;
+	}
+	
+	
+
+}

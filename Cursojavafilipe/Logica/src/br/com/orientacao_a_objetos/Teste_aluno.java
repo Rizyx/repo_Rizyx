@@ -5,21 +5,21 @@ public class Teste_aluno {
 	public static void main(String[] args) {
 		Turma java = new Turma();
 		Aluno filipe = new Aluno();
-			filipe.datanascaluno = "26/06/1995";
-			filipe.nomealuno = "filipe b cordeiro";
-			filipe.rgaluno = "01896325871625";
+			filipe.setDatanascaluno("26/06/1995"); 
+			filipe.setNomealuno("filipe b cordeiro");
+			filipe.setRgaluno("01896325871625");
 		Aluno andre = new Aluno();
-			andre.datanascaluno = "22/01/2003";
-			andre.nomealuno = "andre felipe roseman";
-			andre.rgaluno = "874139561759";
-			andre.turma = java;
-			andre.turma.periodo = "matutino";
-			andre.turma.serie = 9;
-			andre.turma.sigla = "c";
-			andre.turma.tpensino ="java master";
-			System.out.println(filipe.datanascaluno + filipe.nomealuno + filipe.rgaluno);
-			System.out.println(andre.datanascaluno + andre.nomealuno + andre.rgaluno);
-			System.out.println(andre.turma.periodo + andre.turma.serie + andre.turma.sigla + andre.turma.tpensino);
+			andre.setDatanascaluno("22/01/2003");
+			andre.setNomealuno("andre felipe roseman");
+			andre.setRgaluno("874139561759");
+			andre.setTurma(java);
+			andre.getTurma().setPeriodo("matutino");
+			andre.getTurma().setSerie(9);
+			andre.getTurma().setSigla("c");
+			andre.getTurma().setTpensino("java master");
+			System.out.println(filipe.getDatanascaluno() + filipe.getNomealuno() + filipe.getRgaluno());
+			System.out.println(andre.getDatanascaluno() + andre.getNomealuno() + andre.getRgaluno());
+			System.out.println(andre.getTurma().getPeriodo() + andre.getTurma().getSerie() + andre.getTurma().getSigla() + andre.getTurma().getTpensino());
 
 	}
 

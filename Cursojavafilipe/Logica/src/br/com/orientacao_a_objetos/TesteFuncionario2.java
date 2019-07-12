@@ -8,11 +8,11 @@ public class TesteFuncionario2 {
 		boolean continuar = true ;
 		String continuarloop = null;
 		Funcionario somebody = new Funcionario();
-			somebody.nomefunc = Teclado.lerTexto("digite o nome do funcionario");
-			while (continuar == true) {
-					somebody.nomefunc = Teclado.lerTexto("digite o nome do funcionario");
-					somebody.salariofunc = Teclado.lerDouble("digite o salario do funcionario");
-					System.out.println("nome do funcionario: " + somebody.nomefunc + " salario do funcionario: " + somebody.salariofunc);
+			somebody.setNomefunc(Teclado.lerTexto("digite o nome do funcionario"));
+			while (continuar == true) { 					
+					somebody.setNomefunc(Teclado.lerTexto("digite o nome do funcionario"));
+					somebody.setSalariofunc(Teclado.lerDouble("digite o salario do funcionario"));
+					System.out.println("nome do funcionario: " + somebody.getNomefunc() + " salario do funcionario: " + somebody.getSalariofunc());
 					continuarloop = Teclado.lerTexto("deseja continuar?");
 					if (continuarloop.equalsIgnoreCase("nao")){
 						continuar = false;

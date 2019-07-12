@@ -16,6 +16,13 @@ public class vetores {
 			System.out.println(carros[i]);
 			}
 		ler.close();
+		int [] numero = new int [] {100,2};
+		System.out.println(numero[0]);
+		System.out.println(numero[1]);
+		int [] numeral = {100,5};
+		System.out.println(numeral[0]);
+		System.out.println(numeral[1]);
+		
 	}
 
 }
