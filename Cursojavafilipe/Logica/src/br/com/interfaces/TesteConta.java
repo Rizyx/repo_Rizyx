@@ -15,7 +15,8 @@ public class TesteConta {
 		cc.deposito(6500);
 		System.out.println(cc.getSaldo());
 		cc.saque(9000);
-		System.out.println(cc.getSaldo());		
+		System.out.println(cc.getSaldo());	
+		System.out.println(cc.extrato());
 	}
 
 }

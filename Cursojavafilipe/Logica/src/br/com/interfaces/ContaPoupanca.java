@@ -2,7 +2,7 @@ package br.com.interfaces;
 
 import br.com.orientacao_a_objetos.Conta;
 
-public class ContaPoupanca {
+public class ContaPoupanca implements IConta {
 	private int numconta = 0;
 	private double saldo = 0;
 	private double limite = 100;
@@ -41,8 +41,8 @@ public class ContaPoupanca {
 	   this.setSaldo(getSaldo() - valor);
 	}
 	
-	public String extrato(String extract) {
-		extract = ("numero da conta: " + numconta + " saldo " + saldo + " limite: " + limite );
+	public String extrato() {
+		String extract = ("numero da conta: " + numconta + " saldo " + saldo + " limite: " + limite );
 		return extract;
 	}
 	
