@@ -1,0 +1,20 @@
+package br.com.orientacao_a_objetos;
+
+public class Secretaria extends Funcionario {
+	private int ramal = 0;
+
+	public int getRamal() {
+		return ramal;
+	}
+
+	public void setRamal(int ramal) {
+		this.ramal = ramal;
+	}
+	public String info() {
+		String informacao = "nome do funcionario: " + getNomefunc() + " salario do funcionario " + getSalariofunc() + 
+				" salario bonificado do funcionario " + aumentoEspecifico() + " ramal da secretaria " + ramal; 
+		return informacao;
+	}
+	
+
+}
